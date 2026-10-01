@@ -1,25 +1,27 @@
-# Compilación y ejecutables (Windows)
-*.exe
-*.dll
-*.sys
-
-# Compilación y ejecutables (macOS / Linux)
+# Salidas por defecto de GCC y ejecutables comunes
+a.out
 *.out
-*.app
 
-# Archivos de objeto y librerías estáticas/dinámicas
+# Si compilas con `-o nombre_programa`, añade el nombre aquí (ejemplo: main):
+reportadora
+
+# Archivos de objeto, ensamblador intermedio y preprocesado
 *.o
-*.obj
-*.a
-*.lib
-*.so
-*.dylib
+*.s
+*.i
 
-# Carpetas comunes de salida de compiladores e IDEs
-/build/
-/bin/
-/out/
-/Debug/
-/Release/
-.vscode/
-.idea/
+# Librerías compartidas y estáticas generadas
+*.so
+*.so.*
+*.a
+
+# Archivos temporales y de swap generados por Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Volcados de memoria (core dumps generados tras segmentation faults)
+core
+core.*
+vgcore.*
