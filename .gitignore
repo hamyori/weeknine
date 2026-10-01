@@ -1,0 +1,25 @@
+# Compilación y ejecutables (Windows)
+*.exe
+*.dll
+*.sys
+
+# Compilación y ejecutables (macOS / Linux)
+*.out
+*.app
+
+# Archivos de objeto y librerías estáticas/dinámicas
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+
+# Carpetas comunes de salida de compiladores e IDEs
+/build/
+/bin/
+/out/
+/Debug/
+/Release/
+.vscode/
+.idea/
